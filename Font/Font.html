@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="Font.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<div style="padding: 60px">
+<h1 id="header" type="text" style="font-weight: normal">The text is left aligned!!!</h1>
+</div>
+    <br/>
+    <br/>
+<div>
+    <button type="button" onclick="leftAlign()">Left</button>
+    <button type="button" onclick="centerAlign()">Centre</button>
+    <button type="button" onclick="rightAlign()">Right</button>
+    <br/>
+    <br/>
+    <input type="checkbox" id="chk1" onclick="bold()"/>
+    <label>Bold</label>
+    <input type="checkbox" id="chk2" onclick="italic()"/>
+    <label>Italic</label>
+    <br/>
+    <br/>
+    <input type="radio" name="color" onclick="red()">Red</input>
+    <input type="radio" name="color" onclick="green()">Green</input>
+    <input type="radio" name="color" onclick="blue()">Blue</input>
+    <br/>
+    <br/>
+    <label>Size</label>
+        <select id ="size" onchange="sizeChange()">
+            <option>10</option>
+            <option>20</option>
+            <option>30</option>
+            <option>40</option>
+            <option>50</option>
+    </select>
+</div>
+</form>
+</body>
+</html>

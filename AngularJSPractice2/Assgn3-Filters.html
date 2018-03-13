@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script type="text/javascript" src="Hide&Unhide.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<br/>
+<br/>
+    <div class="container ">
+        <h1>Currency Filter</h1>
+        <div class="panel panel-default panel-body">
+            <input type="text" ng-model="txtTry">
+            <div ng-show = "txtTry">
+                <h1>Entered salary : {{txtTry|currency}}</h1>
+                <h1>Entered salary is : {{txtTry*0.86|currency:"&euro;":2}}</h1>
+                <h1>Entered salary is : {{txtTry*64.89|currency:"&#8377;":2}}</h1>
+            </div>
+        </div>
+
+        <br/>
+
+        <h1>orderBy Filter</h1>
+        <div class="panel panel-default panel-body">
+            <div ng-init="ProductDetails=[
+            {Pcode:566544,PName:'First',Price:'$34'},
+            {Pcode:535465,PName:'Second',Price:'$65'},
+            {Pcode:321546,PName:'Third',Price:'$56'},
+            {Pcode:655468,PName:'Fourth',Price:'$73'},
+            {Pcode:954683,PName:'Fifth',Price:'$92'},
+            {Pcode:222545,PName:'Sixth',Price:'$48'},
+            {Pcode:222545,PName:'Seventh',Price:'$82'},
+            {Pcode:222545,PName:'Eighth',Price:'$37'},
+            {Pcode:222545,PName:'Ninth',Price:'$62'},
+            {Pcode:222545,PName:'Tenth',Price:'$25'}
+            ]">
+                <table class="table table-hover table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Pcode</th>
+                        <th>PName</th>
+                        <th>Price</th>
+                    </tr>
+                    </thead>
+
+                    <!--without track by $index too i am able to display duplicates.......  how ?? -->
+
+                    <tr ng-repeat="eobj in ProductDetails | orderBy : 'PName'">
+                        <td>{{ eobj.Pcode }}</td>
+                        <td>{{ eobj.PName }}</td>
+                        <td>{{ eobj.Price }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <br/>
+
+        <h1>SortinOrder</h1>
+        <div class="panel panel-default panel-body">
+            <div ng-init="ProductDetails=[
+            {Pcode:566544,PName:'First',Price:'$34'},
+            {Pcode:535465,PName:'Second',Price:'$65'},
+            {Pcode:321546,PName:'Third',Price:'$56'},
+            {Pcode:655468,PName:'Fourth',Price:'$73'},
+            {Pcode:954683,PName:'Fifth',Price:'$92'},
+            {Pcode:222545,PName:'Sixth',Price:'$48'},
+            {Pcode:222545,PName:'Seventh',Price:'$82'},
+            {Pcode:222545,PName:'Eighth',Price:'$37'},
+            {Pcode:222545,PName:'Ninth',Price:'$62'},
+            {Pcode:222545,PName:'Tenth',Price:'$25'}
+            ]">
+                <table class="table table-hover table table-bordered">
+                    <thead>
+                    <tr>
+                        <th ng-click="myOrderBy = 'Pcode'">Pcode</th>
+                        <th ng-click="myOrderBy = 'PName'">PName</th>
+                        <th ng-click="myOrderBy = 'Price'">Price</th>
+                    </tr>
+                    </thead>
+
+                    <!--without track by $index too i am able to display duplicates.......  how ?? -->
+
+                    <tr ng-repeat="eobj in ProductDetails | orderBy : myOrderBy">
+                        <td>{{ eobj.Pcode }}</td>
+                        <td>{{ eobj.PName }}</td>
+                        <td>{{ eobj.Price }}</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

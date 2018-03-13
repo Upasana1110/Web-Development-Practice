@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="constant.js"></script>
+    <script src="csCtrl.js"></script>
+    <script src="Factory.js"></script>
+    <script src="FactoryController.js"></script>
+
+</head>
+<body background="Images/N2.jpg">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Nike</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#!products">Products</a></li>
+            <li><a href="#!aboutUs">About Us</a></li>
+            <li ng-controller="CSController as cdata">
+                <h4>{{cdata.appTitle}}</h4>
+                <h4>{{cdata.appVersion}}</h4>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div ng-view></div>
+
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="myApp.js"></script>
+    <script src="empDetails.js"></script>
+</head>
+<body>
+<br/>
+<div class="myDiv container" ng-controller="emp as ed">
+    <ul class="nav nav-tabs">
+    <li><a href="../Calc&EnterDetails(AngularJs)/MyCalc.html">Calculator</a></li>
+    <li class="active"><a href="#">EmpDetails</a></li>
+    </ul>
+    <form>
+            <span class="abc">
+                <br/>
+                <br/>
+                <label>Eno</label>
+                <input type="text" class="form-control" ng-model="ed.num">
+
+                <label>Name</label>
+                <input type="text" class="form-control" ng-model="ed.name">
+
+                <label>Gender</label>
+                <label class = "radio-inline"> <input type="radio" ng-model="ed.gender" value="male">Male</input> </label>
+                <label class = "radio-inline"> <input type="radio" ng-model="ed.gender" value="female">Female</input></label>
+                <br/>
+
+                    <label>Dept</label>
+                    <select class="form-control" ng-model="ed.list">
+                        <option value="acct">ACCT</option>
+                        <option value="prod">PROD</option>
+                        <option value="edp">EDP</option>
+                        <option value="marketing">MARKETING</option>
+                </select>
+                <br/>
+                <label>Owns Vehicle </label><input type="checkbox" ng-model="ed.check">
+                <br/>
+                <label>Basic</label>
+                <input type="text" class="form-control" ng-model="ed.basic">
+
+                <label>DA%</label>
+                <input type="text" class="form-control" ng-model="ed.da">
+
+                <label>HRA%</label>
+                <input type="text" class="form-control" ng-model="ed.hra">
+
+                <label>PF%</label>
+                <input type="text" class="form-control" ng-model="ed.pf">
+                <br/>
+                <button type="button" class="btn btn-warning" ng-click="ed.calculate()">Calculate</button>
+            </span>
+
+        <span class="abc pqr">
+                <br/>
+                <br/>
+                <label ng-show="ed.num">Eno : {{ed.num}} </label>
+                <br/>
+                <label ng-show="ed.name">Ename : {{ed.name}} </label>
+                <br/>
+                <div ng-switch="ed.gender">
+                    <label ng-model="ed.gender" ng-switch-when="male">Gender: Male</label>
+                    <label ng-model="ed.gender" ng-switch-when="female">Gender: Female</label>
+                </div>
+                <div ng-switch="ed.list">
+                    <label ng-switch-when="acct">Dept : ACCT</label>
+                    <label ng-switch-when="prod">Dept : PROD</label>
+                    <label ng-switch-when="edp">Dept : EDP</label>
+                    <label ng-switch-when="marketing">Dept : MARKETING</label>
+                </div>
+                <label ng-show="ed.check">Vehicle: Has vehicle</label>
+                <br/>
+                <label ng-show="ed.basic">Basic : {{ed.basic}}</label>
+                <br/>
+                <label ng-show="ed.daValues">DA@ : {{ed.daValues}}</label>
+                <br/>
+                <label ng-show="ed.hraValues">HRA@ : {{ed.hraValues}}</label>
+                <br/>
+                <label ng-show="ed.pfValues">PF@ : {{ed.pfValues}}</label>
+                <br/>
+                <label ng-show="ed.paValues">PA : {{ed.paValues}}</label>
+                <br/>
+                <label ng-show="ed.total">Net Salary : {{ed.total}}</label>
+            </span>
+    </form>
+    <div class="xyz"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+h4{
+    color: lightgray;
+}
+
+h2{
+    font-family: Calibri;
+    color: cadetblue;
+    font-size: 50px;
+}
+.table{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.danger{
+    color: black;
+}
+
+.home{
+    font-family: Calibri;
+    text-align: center;
+    font-size: 100px;
+    color: cadetblue;
+}
+
+
+.nike{
+    font-family: "Calibri Light";
+    color: black;
+    font-style: italic;
+}
+
+#myImg{
+    height: 100px;
+    width: 100px;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+    height: 500px;
+    width: 500px;
+}
+
+/*.bg{*/
+    /*height: 100%;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*}*/
+
+.fontColor{
+    color: cadetblue;
+    font-family: "Calibri Light";
+}
+
+
+.table-striped{
+    background-color:  lavender;
+}
+
+/*.tb{*/
+    /*padd*/
+/*}*/
+
+.pd{
+    background-image: url("Images/N5.jpg");
+}
+
+/*.hm{*/
+    /*background-image: url("N2.jpg");*/
+/*}*/
+
+/*.au{*/
+    /*background-image: url("Nike1.jpg");*/
+/*}*/

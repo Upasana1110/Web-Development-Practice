@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="empDetails.js"></script>
+</head>
+<body>
+    <div style="display: block; margin-left: 70px " >
+        <form>
+            <span style="float: left">
+                <label>Eno</label>
+                <input id = "empno" type="text"/>
+                <br/>
+                <br/>
+                <label>Name</label>
+                <input id = "name" type="text"/>
+                <br/>
+                <br/>
+                <label>Gender</label>
+                <input id="male" type="radio" name = "select">Male</input>
+                <input id="female" type="radio" name="select">Female</input>
+                <br/>
+                <br/>
+                <label>Dept</label>
+                <select id="list">
+                    <option value="acct">ACCT</option>
+                    <option value="prod">PROD</option>
+                    <option value="edp">EDP</option>
+                    <option value="marketing">MARKETING</option>
+                </select>
+                <br/>
+                <br/>
+                <label>Owns Vehicle</label>
+                <input type="checkbox" id="chk" onclick=""/>
+                <br/>
+                <br/>
+                <label>Basic</label>
+                <input id = "basic" type="text"/>
+                <br/>
+                <br/>
+                <label>DA%</label>
+                <input id = "da" type="text"/>
+                <br/>
+                <br/>
+                <label>HRA%</label>
+                <input id="hra" type="text"/>
+                <br/>
+                <br/>
+                <label>PF%</label>
+                <input id="pf" type="text"/>
+                <br/>
+                <br/>
+                <button type="button" onclick="Calculate()">Calculate</button>
+
+            </span>
+            <span style="float:left; margin-left: 100px " >
+                <label>Eno : </label>
+                <label id="enoAns"></label>
+                <br/>
+                <label>Ename : </label>
+                <label id="enameAns"></label>
+                <br/>
+                <label>Dept : </label>
+                <label id="deptAns"></label>
+                <br/>
+                <label>Vehicle :</label>
+                <label id="vehicleAns"></label>
+                <br/>
+                <label>Basic : </label>
+                <label id="basicAns"></label>
+                <br/>
+                <label id="daAnsLabel">DA@ : </label>
+                <label id="daAns"></label>
+                <br/>
+                <label id="hraAnsLabel">HRA@ : </label>
+                <label id="hraAns"></label>
+                <br/>
+                <label id="pfAnsLabel">PF@ : </label>
+                <label id="pfAns"></label>
+                <br/>
+                <label>PA : </label>
+                <label id="paAns"></label>
+                <br/>
+                <label>Net Salary : </label>
+                <label id="salAns"></label>
+
+
+            </span>
+        </form>
+        <div style="clear:both"></div>
+    </div>
+
+</body>
+</html>

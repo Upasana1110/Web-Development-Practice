@@ -1,0 +1,16 @@
+.abc{
+    float: left;
+}
+
+.pqr{
+    margin-left: 100px;
+}
+
+.myDiv{
+    display: block;
+    margin-left: 70px;
+}
+
+.xyz{
+    clear: both;
+}

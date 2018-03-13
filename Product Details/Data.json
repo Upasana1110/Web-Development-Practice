@@ -1,0 +1,8 @@
+[
+  {"PCode": "524584", "PName": "Running Shoes", "MfgDate": "3/2/2017", "Price": "$79.99", "Image": "Running.jpg"},
+  {"PCode": "255156", "PName": "Training Shoes", "MfgDate": "6/5/2016", "Price": "$99.99", "Image": "Training.jpg"},
+  {"PCode": "545421", "PName": "Basketball Shoes", "MfgDate": "2/8/2016", "Price": "$108.00", "Image": "Basketball.jpg"},
+  {"PCode": "548688", "PName": "Soccer Shoes", "MfgDate": "9/6/2017", "Price": "$60.00", "Image": "Soccer.jpg"},
+  {"PCode": "254154", "PName": "Socks", "MfgDate": "6/4/2016", "Price": "$14.00", "Image": "Socks.jpg"}
+
+]

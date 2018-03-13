@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="MyCalc.js"></script>
+</head>
+<body>
+<br/>
+<div class="container" ng-controller="myCalc as math">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Calculator</a></li>
+        <li ><a href="../EnterDetails(AngularJs)/enterEmpDetails.html">EmpDetails</a></li>
+    </ul>
+    <br/>
+    EnterTheNumber: <input type="text" class="form-control" ng-model="math.No1">
+    <br/>
+    <input type="text" class="form-control" ng-model="math.No2">
+
+    <h1 ng-show="math.result != null">Result is : {{math.result}}</h1>
+    <br/>
+    <br/>
+    <button class="btn btn-info" ng-click="math.addValues()">ADD</button>
+    <button class="btn btn-info" ng-click="math.subValues()">SUB</button>
+    <button class="btn btn-info" ng-click="math.mulValues()">MUL</button>
+    <button class="btn btn-info" ng-click="math.divValues()">DIV</button>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="angularjs/angular.min.js"></script>
+    <script src="tytejkuymdf.js"></script>
+</head>
+<body>
+<div ng-controller="c as ca">
+    <label>num1</label>
+    <input type="text" ng-model="ca.n1">
+    <label>num2</label>
+    <input type="text" ng-model="ca.n2">
+    <h1 ng-show="ca.result != null">Result is : {{ca.result}}</h1>
+    <button ng-click="ca.add()">ADD</button>
+
+
+
+</div>
+
+</body>
+</html>

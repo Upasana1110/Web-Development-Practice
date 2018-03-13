@@ -1,0 +1,37 @@
+<Nike>
+    <Product-Details>
+        <PCode>524584</PCode>
+        <PName>Running Shoes</PName>
+        <MfgDate>3/2/2017</MfgDate>
+        <Price>$79.99</Price>
+        <Image>Running.jpg</Image>
+    </Product-Details>
+    <Product-Details>
+        <PCode>255156</PCode>
+        <PName>Training Shoes</PName>
+        <MfgDate>6/5/2016</MfgDate>
+        <Price>$99.99</Price>
+        <Image>Training.jpg</Image>
+    </Product-Details>
+    <Product-Details>
+        <PCode>545421</PCode>
+        <PName>Basketball Shoes</PName>
+        <MfgDate>2/8/2016</MfgDate>
+        <Price>$108.00</Price>
+        <Image>Basketball.jpg</Image>
+    </Product-Details>
+    <Product-Details>
+        <PCode>548688</PCode>
+        <PName>Soccer Shoes</PName>
+        <MfgDate>9/6/2017</MfgDate>
+        <Price>$60.00</Price>
+        <Image>Soccer.jpg</Image>
+    </Product-Details>
+    <Product-Details>
+        <PCode>254154</PCode>
+        <PName>Socks</PName>
+        <MfgDate>6/4/2016</MfgDate>
+        <Price>$14.00</Price>
+        <Image>Socks.jpg</Image>
+    </Product-Details>
+</Nike>

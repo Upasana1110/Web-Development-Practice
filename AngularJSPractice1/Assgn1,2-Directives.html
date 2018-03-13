@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script type="text/javascript" src="Hide&Unhide.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Assgn1&2</a></li>
+        </ul>
+    <br/>
+        <label id="hide">Hide</label>
+        <input type="checkbox" id="myId" ng-model="unhide" onclick="hideUnhide()">
+        <div ng-hide="unhide">
+            <br/>
+            <label>Search</label>
+            <input type="text" ng-model="searchtext">
+            <br/>
+            <br/>
+            <div ng-init="ProductDetails=[
+                {Pcode:566544,PName:'First',Price:'$34'},
+                {Pcode:566544,PName:'First',Price:'$34'},
+                {Pcode:321546,PName:'Third',Price:'$56'},
+                {Pcode:655468,PName:'Fourth',Price:'$73'},
+                {Pcode:954683,PName:'Fifth',Price:'$92'},
+                {Pcode:222545,PName:'Sixth',Price:'$48'},
+                {Pcode:222545,PName:'Seventh',Price:'$82'},
+                {Pcode:222545,PName:'Eighth',Price:'$37'},
+                {Pcode:222545,PName:'Ninth',Price:'$62'},
+                {Pcode:222545,PName:'Tenth',Price:'$25'}
+                ]">
+                <table class="table table-hover table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Pcode</th>
+                        <th>PName</th>
+                        <th>Price</th>
+                    </tr>
+                    </thead>
+
+                    <tr ng-repeat="eobj in ProductDetails | filter : searchtext">
+                        <td>{{ eobj.Pcode }}</td>
+                        <td>{{ eobj.PName }}</td>
+                        <td>{{ eobj.Price }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

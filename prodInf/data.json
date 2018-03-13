@@ -1,0 +1,8 @@
+[
+  {"PCode": "524584", "PName": "Running Shoes","Price": 79.99, "Image": "Images/Running.jpg"},
+  {"PCode": "255156", "PName": "Training Shoes","Price": 99.99, "Image": "Images/Training.jpg"},
+  {"PCode": "545421", "PName": "Basketball Shoes","Price": 108.00, "Image": "Images/Basketball.jpg"},
+  {"PCode": "548688", "PName": "Soccer Shoes","Price": 60.00, "Image": "Images/Soccer.jpg"},
+  {"PCode": "254154", "PName": "Socks","Price": 14.00, "Image": "Images/Socks.jpg"}
+
+]

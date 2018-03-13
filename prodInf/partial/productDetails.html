@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="col-xs-2">
+        <h4><span class="label label-warning">SEARCH</span></h4>
+        <input type="text" class="form-control" ng-model="searchtext">
+        <br/>
+
+    </div>
+    <div class="panel panel-default panel-body  bg pd">
+
+            <div ng-controller="ProductController as einf">
+                <table class="table table-hover table-bordered table-striped"  >
+                    <thead>
+                        <tr>
+                            <th ng-click="myOrderBy = 'PCode'">Pcode</th>
+                            <th ng-click="myOrderBy = 'PName'">PName</th>
+                            <th ng-click="myOrderBy = 'Price'">Price</th>
+                            <th>Image</th>
+
+                        </tr>
+                    </thead>
+
+                    <!--without track by $index too i am able to display duplicates.......  how ?? -->
+                    <!--<tbody ng-model="myDiv" {{filter : searchtext | orderBy : myOrderBy }}></tbody>-->
+                    <tr ng-repeat="eobj in einf.myDiv | filter : searchtext | orderBy : myOrderBy">
+                        <td>{{ eobj.PCode }}</td>
+                        <td>{{ eobj.PName }}</td>
+                        <td>${{ eobj.Price }}</td>
+                        <td><img id = "myImg" src='{{ eobj.Image }}'/></td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+
+</div>

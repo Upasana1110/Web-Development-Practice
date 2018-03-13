@@ -1,0 +1,122 @@
+.top-left {
+    position: absolute;
+    top: 80px;
+    left: 16px;
+}
+
+.abc {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.pull-left {
+    float: left;
+    text-align: left;
+}
+
+.xyz{
+    margin-right: 50px;
+}
+
+.pull-right {
+    float: right;
+    text-align: left;
+}
+
+.block {
+    display: inline-block;
+    width: 100%;
+}
+
+.pqr{
+    float: left;
+    width: 33.25%;
+    padding: 45px;
+    background-color: dodgerblue;
+    height: 150px;
+    color: white;
+    margin-right: 1px;
+
+}
+
+.bg{
+    width: 100%;
+}
+
+.fa-cog{
+    color: darkturquoise;
+}
+
+.fa-col{
+    color: white;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.myFont{
+    font-family:'Sofia Pro W01';
+}
+
+.ele{
+    text-align: left;
+    font-weight: bold;
+}
+
+h1{
+    margin-bottom: 1px;
+    line-height: 0.7em;
+    margin-left: 20px;
+    font-size: 400%;
+
+}
+
+.lead{
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+}
+
+.box_industries
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.box_industries .content
+{
+    background: green;
+    bottom: -100%;
+    color: #fff;
+    height: 100%;
+    left: 0%;
+    position: absolute;
+    transition: bottom 0.5s ease;
+    width: 100%;
+    padding: 20px;
+}
+.box_industries:hover .content
+{
+    bottom: 0%;
+}
+
+.navLeft{
+    margin-left: 950px;
+}
+
+.picture{
+    position: relative;
+    left: 123px;
+    display:inline-block;
+    height: 150px;
+}
+
+/*.center-cropped {*/
+    /*!*object-fit: none;*!*/
+    /*!*object-position: center;*!*/
+    /*!*width: 100px;*!*/
+    /*!*height: 100px;*!*/
+    /*clip: rect(0px,60px,200px,0px);*/
+/*}*/

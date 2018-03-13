@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="studResult.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label>Student Name</label>
+    <input id="name" type="text"/>
+    <br/>
+    <br/>
+    <label>Marks 1</label>
+    <input id="mrk1" type="text"/>
+    <br/>
+    <br/>
+    <label>Marks 2</label>
+    <input id="mrk2" type="text"/>
+    <br/>
+    <br/>
+    <label>Marks 3</label>
+    <input id="mrk3" type="text"/>
+    <br/>
+    <br/>
+    <label>Total</label>
+    <input id="ttl" type="text"/>
+    <br/>
+    <br/>
+    <label>%</label>
+    <input id="perc" type="text"/>
+    <br/>
+    <br/>
+    <label class = "label label-success">Result</label>
+    <label id="result"></label>
+    <br/>
+    <br/>
+    <label>Grade</label>
+    <label id="gradeResult"></label>
+    <br/>
+    <br/>
+    <button type="button" onclick="showResult()" class = "btn btn-primary">Show Result</button>
+</form>
+</body>
+</html>
